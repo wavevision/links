@@ -1,0 +1,6 @@
+# Generated file, do not modify directly!
+services:
+	- factory: Wavevision\Links\IsLinkActive
+	  inject: true
+	- factory: Wavevision\Links\LinkGenerator
+	  inject: true

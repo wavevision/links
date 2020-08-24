@@ -1,0 +1,37 @@
+{
+  "name": "wavevision/links",
+  "description": "Link helpers and wrappers for Nette application.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Wavevision s.r.o.",
+      "email": "info@wavevision.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Wavevision\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Wavevision\\": "tests/"
+    }
+  },
+  "config": {
+    "platform": {
+      "php": "7.4"
+    },
+    "sort-packages": true
+  },
+  "require": {
+    "nette/application": "^3.0",
+    "wavevision/di-service-annotation": "^4.0",
+    "wavevision/props-control": "^5.0",
+    "wavevision/utils": "^2.13"
+  },
+  "require-dev": {
+    "wavevision/coding-standard": "^5.0"
+  }
+}
