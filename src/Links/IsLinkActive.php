@@ -3,9 +3,9 @@
 namespace Wavevision\Links;
 
 use Nette\Application\UI\Component;
-use Nette\Http\IRequest;
 use Nette\SmartObject;
 use Wavevision\DIServiceAnnotation\DIService;
+use Wavevision\Links\Nette\InjectRequest;
 use function is_string;
 
 /**
@@ -14,14 +14,8 @@ use function is_string;
 class IsLinkActive
 {
 
+	use InjectRequest;
 	use SmartObject;
-
-	private IRequest $request;
-
-	public function __construct(IRequest $request)
-	{
-		$this->request = $request;
-	}
 
 	/**
 	 * @param string|AbsoluteLink|Link $link
