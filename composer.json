@@ -32,6 +32,9 @@
     "wavevision/utils": "^2.13"
   },
   "require-dev": {
+    "phpstan/extension-installer": "^1.0",
+    "phpstan/phpstan-phpunit": "^0.12.16",
+    "phpunit/phpunit": "^9.3",
     "wavevision/coding-standard": "^5.0"
   }
 }
