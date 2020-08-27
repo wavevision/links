@@ -7,7 +7,7 @@ use Nette\Http\IRequest;
 trait InjectRequest
 {
 
-	protected IRequest  $request;
+	protected IRequest $request;
 
 	public function injectRequest(IRequest $request): void
 	{
