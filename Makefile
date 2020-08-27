@@ -2,6 +2,7 @@ bin=vendor/bin
 chrome:=$(shell command -v google-chrome 2>/dev/null)
 codeSnifferRuleset=codesniffer-ruleset.xml
 coverage=$(temp)/coverage
+coverageClover=$(coverage)/coverage.xml
 examples=examples
 php=php
 src=src
@@ -48,6 +49,12 @@ test:
 test-coverage: reset
 	$(bin)/phpunit --coverage-html=$(coverage)
 
+test-coverage-clover: reset
+	$(bin)/phpunit --coverage-clover=$(coverageClover)
+
+test-coverage-report: test-coverage-clover
+	$(bin)/php-coveralls --coverage_clover=$(coverageClover) --verbose
+
 test-coverage-open: test-coverage
 ifndef chrome
 	open -a 'Google Chrome' $(coverage)/index.html
@@ -55,4 +62,4 @@ else
 	google-chrome $(coverage)/index.html
 endif
 
-ci: phpcs phpstan test
+ci: phpcs phpstan test-coverage-report
