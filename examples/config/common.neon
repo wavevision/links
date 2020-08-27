@@ -1,0 +1,11 @@
+application:
+	errorPresenter: Error
+	mapping:
+		*: Wavevision\LinksExamples\*Module\Presenters\*Presenter
+
+services:
+	router: Wavevision\LinksExamples\Router\RouterFactory::createRouter
+
+includes:
+	- ../../config/services.neon
+	- services.neon

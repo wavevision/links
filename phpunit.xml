@@ -6,6 +6,7 @@
   beStrictAboutOutputDuringTests="true"
   beStrictAboutTestsThatDoNotTestAnything="true"
   beStrictAboutTodoAnnotatedTests="true"
+  bootstrap="tests/bootstrap.php"
   cacheResult="true"
   cacheResultFile="temp/.phpunit.result.cache"
   colors="true" executionOrder="defects"

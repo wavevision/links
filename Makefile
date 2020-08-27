@@ -2,6 +2,7 @@ bin=vendor/bin
 chrome:=$(shell command -v google-chrome 2>/dev/null)
 codeSnifferRuleset=codesniffer-ruleset.xml
 coverage=$(temp)/coverage
+examples=examples
 php=php
 src=src
 temp=temp
@@ -17,6 +18,7 @@ composer:
 	composer install
 
 reset:
+	rm -rf $(temp)/cache
 	composer dumpautoload
 
 di: reset

@@ -13,12 +13,9 @@ trait DecoratedLink
 		$this->link = $link;
 	}
 
-	/**
-	 * @return static
-	 */
-	public static function create(Link $link)
+	public static function create(Link $link): self
 	{
-		return new static($link);
+		return new self($link);
 	}
 
 }

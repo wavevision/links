@@ -14,10 +14,7 @@ trait LabeledAbsoluteLink
 		$this->label = $label;
 	}
 
-	/**
-	 * @return static
-	 */
-	public static function create(AbsoluteLink $absoluteLink, string $label)
+	public static function create(AbsoluteLink $absoluteLink, string $label): self
 	{
 		return new self($absoluteLink, $label);
 	}

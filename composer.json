@@ -16,7 +16,8 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "Wavevision\\": "tests/"
+      "Wavevision\\LinksExamples\\": "examples/LinksExamples/",
+      "Wavevision\\LinksTests\\": "tests/LinksTests/"
     }
   },
   "config": {
@@ -26,15 +27,19 @@
     "sort-packages": true
   },
   "require": {
+    "php": ">=7.4",
     "nette/application": "^3.0",
     "wavevision/di-service-annotation": "^4.0",
     "wavevision/props-control": "^5.0",
     "wavevision/utils": "^2.13"
   },
   "require-dev": {
+    "nette/bootstrap": "^3.0",
     "phpstan/extension-installer": "^1.0",
+    "phpstan/phpstan-nette": "^0.12.9",
     "phpstan/phpstan-phpunit": "^0.12.16",
     "phpunit/phpunit": "^9.3",
-    "wavevision/coding-standard": "^5.0"
+    "wavevision/coding-standard": "^5.0",
+    "wavevision/nette-tests": "^3.1"
   }
 }

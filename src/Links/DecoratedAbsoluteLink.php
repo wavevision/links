@@ -13,10 +13,7 @@ trait DecoratedAbsoluteLink
 		$this->absoluteLink = $absoluteLink;
 	}
 
-	/**
-	 * @return static
-	 */
-	public static function create(AbsoluteLink $absoluteLink)
+	public static function create(AbsoluteLink $absoluteLink): self
 	{
 		return new self($absoluteLink);
 	}

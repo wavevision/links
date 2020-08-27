@@ -1,0 +1,6 @@
+# Generated file, do not modify directly!
+services:
+	- implement: Wavevision\LinksExamples\DefaultModule\Components\AbsoluteLink\ControlFactory
+	  inject: true
+	- implement: Wavevision\LinksExamples\DefaultModule\Components\Link\ControlFactory
+	  inject: true

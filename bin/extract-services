@@ -7,4 +7,7 @@ use Wavevision\Utils\Path;
 
 require __DIR__ . '/../vendor/autoload.php';
 $rootDir = Path::create(__DIR__, '..');
-Runner::run(new Configuration($rootDir->string('src'), $rootDir->string('config', 'services.neon')));
+Runner::run(
+  new Configuration($rootDir->string('src'), $rootDir->string('config', 'services.neon')),
+  new Configuration($rootDir->string('examples'), $rootDir->string('examples', 'config', 'services.neon'))
+);

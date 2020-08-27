@@ -2,3 +2,15 @@
 <h1 align="center">Links</h1>
 
 Helpers and wrappers to help you manage links consistently in your Nette application.
+
+## Installation
+
+Via [Composer](https://getcomposer.org)
+
+```bash
+composer require wavevision/links
+```
+
+## Usage
+
+See [examples](./examples) for further info on how to use this library.
