@@ -3,12 +3,12 @@
 namespace Wavevision\Links;
 
 use Nette\Application\UI\Presenter;
-use Nette\Bridges\ApplicationLatte\Template;
+use Wavevision\PropsControl\PropsControlTemplate;
 use Wavevision\PropsControl\ValidProps;
 
 /**
  * @property-read Presenter $presenter
- * @property-read Template $template
+ * @property-read PropsControlTemplate $template
  */
 trait ComponentWithAbsoluteLink
 {
