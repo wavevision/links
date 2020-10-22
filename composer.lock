@@ -536,16 +536,16 @@
         },
         {
             "name": "wavevision/props-control",
-            "version": "5.0.0",
+            "version": "5.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wavevision/props-control.git",
-                "reference": "ffb39c395025661d768b2ec2c1dc27025ed6102f"
+                "reference": "87c3830d4015957740bbbf6a3c6fdae60946ff93"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wavevision/props-control/zipball/ffb39c395025661d768b2ec2c1dc27025ed6102f",
-                "reference": "ffb39c395025661d768b2ec2c1dc27025ed6102f",
+                "url": "https://api.github.com/repos/wavevision/props-control/zipball/87c3830d4015957740bbbf6a3c6fdae60946ff93",
+                "reference": "87c3830d4015957740bbbf6a3c6fdae60946ff93",
                 "shasum": ""
             },
             "require": {
@@ -555,15 +555,13 @@
                 "wavevision/utils": "^2.5"
             },
             "require-dev": {
-                "jakub-onderka/php-parallel-lint": "^1.0",
                 "latte/latte": "^2.5",
-                "phing/phing": "^3.0.0-alpha3",
+                "nette/bootstrap": "^3.0",
                 "php-coveralls/php-coveralls": "^2.1",
-                "phpstan/phpstan": "^0.11.16",
-                "phpunit/phpunit": "^8.3",
+                "phpunit/phpunit": "^9.3",
                 "symfony/css-selector": "^4.3",
                 "symfony/dom-crawler": "^4.3",
-                "wavevision/coding-standard": "^3.1"
+                "wavevision/coding-standard": "^5.2"
             },
             "type": "library",
             "extra": {
@@ -593,7 +591,7 @@
                 }
             ],
             "description": "Create smart UI components for Nette Framework.",
-            "time": "2020-03-25T12:43:14+00:00"
+            "time": "2020-10-22T08:32:12+00:00"
         },
         {
             "name": "wavevision/utils",
