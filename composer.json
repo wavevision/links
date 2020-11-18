@@ -29,7 +29,7 @@
   "require": {
     "php": ">=7.4",
     "nette/application": "^3.0",
-    "wavevision/props-control": "^5.0",
+    "wavevision/props-control": "^6.0",
     "wavevision/utils": "^2.13"
   },
   "require-dev": {
