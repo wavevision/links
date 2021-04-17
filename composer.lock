@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ec00c01d3852ace84529c07057d0d068",
+    "content-hash": "903a1547352bb28b43b7f5e821821a4d",
     "packages": [
         {
             "name": "nette/application",
@@ -647,16 +647,16 @@
         },
         {
             "name": "wavevision/utils",
-            "version": "2.13.2",
+            "version": "2.14.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wavevision/utils.git",
-                "reference": "6ba5963dfc5b474d3d169dde1d58b7b1f2db840c"
+                "reference": "d685a39533c359f7fa8468ea3f54a38f0b30868a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wavevision/utils/zipball/6ba5963dfc5b474d3d169dde1d58b7b1f2db840c",
-                "reference": "6ba5963dfc5b474d3d169dde1d58b7b1f2db840c",
+                "url": "https://api.github.com/repos/wavevision/utils/zipball/d685a39533c359f7fa8468ea3f54a38f0b30868a",
+                "reference": "d685a39533c359f7fa8468ea3f54a38f0b30868a",
                 "shasum": ""
             },
             "require": {
@@ -705,9 +705,9 @@
             "description": "Useful PHP utilities and helpers.",
             "support": {
                 "issues": "https://github.com/wavevision/utils/issues",
-                "source": "https://github.com/wavevision/utils/tree/2.13.2"
+                "source": "https://github.com/wavevision/utils/tree/2.14.0"
             },
-            "time": "2021-04-15T17:47:52+00:00"
+            "time": "2021-04-17T10:05:14+00:00"
         }
     ],
     "packages-dev": [
@@ -5824,16 +5824,16 @@
         },
         {
             "name": "wavevision/nette-tests",
-            "version": "3.1.3",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wavevision/nette-tests.git",
-                "reference": "daaa6a542eef8097649adf1b73acc379146c35fc"
+                "reference": "16d5176ce45e1335e85c9de3bf5ef673ae487add"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wavevision/nette-tests/zipball/daaa6a542eef8097649adf1b73acc379146c35fc",
-                "reference": "daaa6a542eef8097649adf1b73acc379146c35fc",
+                "url": "https://api.github.com/repos/wavevision/nette-tests/zipball/16d5176ce45e1335e85c9de3bf5ef673ae487add",
+                "reference": "16d5176ce45e1335e85c9de3bf5ef673ae487add",
                 "shasum": ""
             },
             "require": {
@@ -5891,9 +5891,9 @@
             "description": "PHPUnit extension for testing Nette applications.",
             "support": {
                 "issues": "https://github.com/wavevision/nette-tests/issues",
-                "source": "https://github.com/wavevision/nette-tests/tree/3.1.3"
+                "source": "https://github.com/wavevision/nette-tests/tree/3.2.0"
             },
-            "time": "2021-04-15T18:41:27+00:00"
+            "time": "2021-04-16T19:26:40+00:00"
         },
         {
             "name": "webmozart/assert",
@@ -5963,8 +5963,5 @@
         "php": ">=7.4"
     },
     "platform-dev": [],
-    "platform-overrides": {
-        "php": "7.4"
-    },
     "plugin-api-version": "2.0.0"
 }

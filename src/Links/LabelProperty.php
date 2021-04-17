@@ -2,8 +2,12 @@
 
 namespace Wavevision\Links;
 
+use Wavevision\Utils\ImmutableObject;
+
 trait LabelProperty
 {
+
+	use ImmutableObject;
 
 	private string $label;
 
@@ -17,9 +21,7 @@ trait LabelProperty
 	 */
 	public function withLabel(string $label)
 	{
-		$item = clone $this;
-		$item->label = $label;
-		return $item;
+		return $this->withMutation('label', $label);
 	}
 
 }

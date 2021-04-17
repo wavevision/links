@@ -2,8 +2,12 @@
 
 namespace Wavevision\Links;
 
+use Wavevision\Utils\ImmutableObject;
+
 trait LinkProperty
 {
+
+	use ImmutableObject;
 
 	private Link $link;
 
@@ -17,9 +21,7 @@ trait LinkProperty
 	 */
 	public function withLink(Link $link)
 	{
-		$item = clone $this;
-		$item->link = $link;
-		return $item;
+		return $this->withMutation('link', $link);
 	}
 
 }

@@ -2,8 +2,12 @@
 
 namespace Wavevision\Links;
 
+use Wavevision\Utils\ImmutableObject;
+
 trait AbsoluteLinkProperty
 {
+
+	use ImmutableObject;
 
 	private AbsoluteLink $absoluteLink;
 
@@ -17,9 +21,7 @@ trait AbsoluteLinkProperty
 	 */
 	public function withAbsoluteLink(AbsoluteLink $absoluteLink)
 	{
-		$item = clone $this;
-		$item->absoluteLink = $absoluteLink;
-		return $item;
+		return $this->withMutation('absoluteLink', $absoluteLink);
 	}
 
 }

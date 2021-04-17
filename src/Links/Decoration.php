@@ -2,8 +2,12 @@
 
 namespace Wavevision\Links;
 
+use Wavevision\Utils\ImmutableObject;
+
 trait Decoration
 {
+
+	use ImmutableObject;
 
 	private ?string $label = null;
 
@@ -24,9 +28,7 @@ trait Decoration
 	 */
 	public function withIcon(?string $icon)
 	{
-		$item = clone $this;
-		$item->icon = $icon;
-		return $item;
+		return $this->withMutation('icon', $icon);
 	}
 
 	/**
@@ -34,9 +36,7 @@ trait Decoration
 	 */
 	public function withLabel(?string $label)
 	{
-		$item = clone $this;
-		$item->label = $label;
-		return $item;
+		return $this->withMutation('label', $label);
 	}
 
 }
