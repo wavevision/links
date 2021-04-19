@@ -9,7 +9,7 @@ final class GeneratedLink
 
 	use SmartObject;
 
-	private const ACTIVE = 'active';
+	public const ACTIVE = 'active';
 
 	private bool $active;
 
@@ -28,10 +28,7 @@ final class GeneratedLink
 
 	public function getActiveProp(): ?string
 	{
-		if ($this->getActive()) {
-			return self::ACTIVE;
-		}
-		return null;
+		return $this->getActive() ? self::ACTIVE : null;
 	}
 
 	public function getHref(): string
