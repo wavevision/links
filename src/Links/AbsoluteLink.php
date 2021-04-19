@@ -2,12 +2,12 @@
 
 namespace Wavevision\Links;
 
-use Nette\SmartObject;
+use Wavevision\Utils\ImmutableObject;
 
 final class AbsoluteLink
 {
 
-	use SmartObject;
+	use ImmutableObject;
 
 	private Link $link;
 
@@ -36,16 +36,12 @@ final class AbsoluteLink
 
 	public function withLink(Link $link): self
 	{
-		$absoluteLink = clone $this;
-		$absoluteLink->link = $link;
-		return $absoluteLink;
+		return $this->withMutation('link', $link);
 	}
 
 	public function withModule(string $module): self
 	{
-		$link = clone $this;
-		$link->module = $module;
-		return $link;
+		return $this->withMutation('module', $module);
 	}
 
 }
